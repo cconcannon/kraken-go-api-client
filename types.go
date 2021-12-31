@@ -31,13 +31,14 @@ const (
 	GNOEUR   = "GNOEUR"
 	GNOUSD   = "GNOUSD"
 	GNOXBT   = "GNOXBT"
-	LINKUSD   = "LINKUSD"
-	LINKXBT   = "LINKXBT"
+	LINKUSD  = "LINKUSD"
+	LINKXBT  = "LINKXBT"
 	QTUMCAD  = "QTUMCAD"
 	QTUMETH  = "QTUMETH"
 	QTUMEUR  = "QTUMEUR"
 	QTUMUSD  = "QTUMUSD"
 	QTUMXBT  = "QTUMXBT"
+	SOLUSD   = "SOLUSD"
 	USDTZUSD = "USDTZUSD"
 	XBTUSDT  = "XBTUSDT"
 	XETCXETH = "XETCXETH"
@@ -139,6 +140,7 @@ type AssetPairsResponse struct {
 	QTUMEUR  AssetPairInfo
 	QTUMUSD  AssetPairInfo
 	QTUMXBT  AssetPairInfo
+	SOLUSD   AssetPairInfo
 	USDTZUSD AssetPairInfo
 	XETCXETH AssetPairInfo
 	XETCXXBT AssetPairInfo
@@ -237,6 +239,7 @@ type AssetsResponse struct {
 	KFEE AssetInfo
 	LINK AssetInfo
 	QTUM AssetInfo
+	SOL  AssetInfo
 	USDT AssetInfo
 	XDAO AssetInfo
 	XETC AssetInfo
@@ -285,6 +288,7 @@ type BalanceResponse struct {
 	QTUM float64 `json:"QTUM,string"`
 	KFEE float64 `json:"KFEE,string"`
 	LINK float64 `json:"LINK,string"`
+	SOL  float64 `json:"SOL,string"`
 	USDT float64 `json:"USDT,string"`
 	XDAO float64 `json:"XDAO,string"`
 	XETC float64 `json:"XETC,string"`
@@ -353,6 +357,7 @@ type Fees struct {
 	QTUMEUR  FeeInfo
 	QTUMUSD  FeeInfo
 	QTUMXBT  FeeInfo
+	SOLUSD   FeeInfo
 	USDTZUSD FeeInfo
 	XETCXETH FeeInfo
 	XETCXXBT FeeInfo
@@ -449,6 +454,7 @@ type TickerResponse struct {
 	QTUMEUR  PairTickerInfo
 	QTUMUSD  PairTickerInfo
 	QTUMXBT  PairTickerInfo
+	SOLUSD   PairTickerInfo
 	USDTZUSD PairTickerInfo
 	XBTUSDT  PairTickerInfo
 	XETCXETH PairTickerInfo
